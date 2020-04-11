@@ -7,12 +7,11 @@ import { MoedaService, ConversorService } from './services';
 
 @NgModule({
   declarations: [
-    ConversorComponent,
-    HttpClientModule
+    ConversorComponent
   ],
   imports: [
     CommonModule,
-
+    HttpClientModule
   ],
   exports: [
     ConversorComponent
