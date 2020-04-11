@@ -1,8 +1,8 @@
-import { ConversorDirective } from './numero.directive';
+import { NumeroDirective } from './numero.directive';
 
-describe('ConversorDirective', () => {
+describe('NumeroDirective', () => {
   it('should create an instance', () => {
-    const directive = new ConversorDirective();
+    const directive = new NumeroDirective();
     expect(directive).toBeTruthy();
   });
 });
