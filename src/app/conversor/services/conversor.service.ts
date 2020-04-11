@@ -16,7 +16,6 @@ export class ConversorService {
    * @return Observable<ConversaoResponse>
    */
   converter(conversao: Conversao): Observable<any> {
-    // Na linha abaixo altere a '?' por '&'
     const params = `&base=${conversao.moedaDe}&symbols=${conversao.moedaPara}`;
     return this.http
       .get(this.BASE_URL + params);
