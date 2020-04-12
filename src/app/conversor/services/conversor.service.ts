@@ -7,7 +7,7 @@ import {
 } from '../models';
 @Injectable()
 export class ConversorService {
-  private readonly BASE_URL = 'http://data.fixer.io/api/latest?access_key=eba7130a5b2d720ce43eb5fcddd47cc3';
+  private readonly BASE_URL = 'http://data.fixer.io/api/latest?access_key=c0bf6152e5df73b48351ff01e91862b4';
   constructor(private http: HttpClient) { }
   /**
    * Realiza a chamada para a API de conversão de moedas.
