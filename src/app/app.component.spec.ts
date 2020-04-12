@@ -1,5 +1,7 @@
 import { TestBed, async } from '@angular/core/testing';
+
 import { AppComponent } from './app.component';
+import { ConversorModule } from './conversor';
 
 describe('AppComponent', () => {
   beforeEach(async(() => {
@@ -7,12 +9,16 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      providers: [
+        ConversorModule
+      ]
+
     }).compileComponents();
   }));
 
-  it('should create the app', () => {
+  it('should create the app', async(() => {
     const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
+    const app = fixture.debugElement.componentInstance;
     expect(app).toBeTruthy();
-  });
+  }));
 });
